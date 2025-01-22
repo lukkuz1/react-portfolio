@@ -37,6 +37,7 @@
     "description": "Website as a portfolio.",
     "tags": ["React", "Typescript", "Web App"],
     "github": "https://github.com/lukkuz1/react-portfolio",
+    "link": "https://startling-llama-ff3bcb.netlify.app/",
     "source": "portfolio",
     "image": "/images/726056.png"
   }
