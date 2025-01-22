@@ -1,0 +1,43 @@
+[
+  {
+    "name": "JourneyFy",
+    "description": "JourneyFy is a journey booking app built with React Native and Firebase, designed to help users easily plan and book their trips.",
+    "tags": ["React Native", "Firebase", "Mobile App", "Booking System"],
+    "github": "https://github.com/lukkuz1/JourneyFy",
+    "source": "journeyfy",
+    "image": "/images/journeyfy_logo.png"
+  },
+  {
+    "name": "UniFit",
+    "description": "UniFit yra mobili programėlė, kuri seka naudotojo žingsnius, teikia taškus ir leidžia šiuos taškus išleisti įvairiems prizams.",
+    "tags": ["React Native", "Firebase", "Mobile App"],
+    "github": "https://github.com/lukkuz1/unifit_test",
+    "source": "unifit",
+    "image": "/images/React_Native_Logo.png"
+  },
+  {
+    "name": "Gameba",
+    "description": "Gameba yra žaidimų pardavimo svetainė, kurioje vartotojai gali pirkti, peržiūrėti ir vertinti žaidimus. Žaidimai yra suskirstyti į kategorijas, o vartotojai gali palikti komentarus, išreikšdami savo nuomonę apie kiekvieną žaidimą.",
+    "tags": ["React", "C#", "Web App"],
+    "github": "https://github.com/lukkuz1/gameba-fe",
+    "source": "gameba",
+    "image": "/images/future-of-gaming.jpg"
+  },
+
+  {
+    "name": "Sveikatos vedlys",
+    "description": "Vedlys skirtas gerinti sveikatai.",
+    "tags": ["React", "Firebase", "Web App"],
+    "github": "https://github.com/lukkuz1/Sveikatos-vedlys",
+    "source": "vedlys",
+    "image": "/images/React-icon.svg.png"
+  },
+  {
+    "name": "Portfolio website",
+    "description": "Website as a portfolio.",
+    "tags": ["React", "Typescript", "Web App"],
+    "github": "https://github.com/lukkuz1/react-portfolio",
+    "source": "portfolio",
+    "image": "/images/726056.png"
+  }
+]
