@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 
 // A custom hook to lazily load images
 export const useLazyImage = (src: string): string => {
-  const [loadedImage, setLoadedImage] = useState<string>(src); // This holds the final image source URL
   const [isIntersecting, setIsIntersecting] = useState<boolean>(false);
 
   useEffect(() => {

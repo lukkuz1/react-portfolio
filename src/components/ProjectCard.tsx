@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button, Typography, Badge, Grid, Link } from "@mui/material";
+import { Box, Button, Typography, Badge, Link } from "@mui/material";
 import { VscGithubInverted, VscLinkExternal } from "react-icons/vsc";
 import { useLazyImage } from "../hooks/useLazyImage";
 
