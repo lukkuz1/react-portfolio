@@ -4,8 +4,8 @@ import emailjs from 'emailjs-com';
 
 const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  const [loading, setLoading] = useState(false); // Loading state for email submission
-  const [statusMessage, setStatusMessage] = useState<string | null>(null); // Status message to show confirmation or error
+  const [loading, setLoading] = useState(false);
+  const [statusMessage, setStatusMessage] = useState<string | null>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -13,35 +13,43 @@ const ContactForm: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setLoading(true); // Set loading to true while sending email
-    setStatusMessage(null); // Reset status message before submitting
+    setLoading(true);
+    setStatusMessage(null);
 
     // Call EmailJS to send the email
     emailjs
       .send(
-        'service_c6pg4vl', // Replace with your EmailJS service ID
-        'template_yourTemplateID', // Replace with your EmailJS template ID
-        formData, // Data from the form
-        'user_yourUserID' // Replace with your EmailJS user ID
+        'service_c6pg4vl',
+        'template_ihzm108',
+        {
+          from_name: formData.name,
+          to_name: 'Lukas',
+          message: formData.message,
+        },
+        'X2SzUFBbOCbZtqEpY'
       )
       .then(
         (result) => {
           console.log('Email successfully sent:', result.text);
-          setStatusMessage('Your message has been sent successfully!'); // Success message
-          setFormData({ name: '', email: '', message: '' }); // Reset form data
+          setStatusMessage('Your message has been sent successfully!');
+          setFormData({ name: '', email: '', message: '' });
         },
         (error) => {
           console.log('Error sending email:', error.text);
-          setStatusMessage('There was an error sending your message. Please try again later.'); // Error message
+          setStatusMessage('There was an error sending your message. Please try again later.');
         }
       )
       .finally(() => {
-        setLoading(false); // Reset loading state
+        setLoading(false);
       });
   };
 
   return (
-    <Box component="form" onSubmit={handleSubmit} sx={{ display: 'flex', flexDirection: 'column', gap: 2, maxWidth: 400, margin: 'auto' }}>
+    <Box
+      component="form"
+      onSubmit={handleSubmit}
+      sx={{ display: 'flex', flexDirection: 'column', gap: 2, maxWidth: 400, margin: 'auto' }}
+    >
       <TextField
         label="Your Name"
         name="name"
@@ -74,7 +82,13 @@ const ContactForm: React.FC = () => {
 
       {/* Status message (success or error) */}
       {statusMessage && (
-        <Typography variant="body2" sx={{ color: statusMessage.includes('successfully') ? 'green' : 'red', marginTop: 2 }}>
+        <Typography
+          variant="body2"
+          sx={{
+            color: statusMessage.includes('successfully') ? 'green' : 'red',
+            marginTop: 2,
+          }}
+        >
           {statusMessage}
         </Typography>
       )}
