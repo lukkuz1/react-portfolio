@@ -25,6 +25,7 @@ const ContactForm: React.FC = () => {
           from_name: formData.name,
           to_name: 'Lukas',
           message: formData.message,
+          email: formData.email,
         },
         'X2SzUFBbOCbZtqEpY'
       )
