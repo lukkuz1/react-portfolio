@@ -40,5 +40,24 @@
     "link": "https://startling-llama-ff3bcb.netlify.app/",
     "source": "portfolio",
     "image": "/images/726056.png"
+  },
+  {
+    "name": "Music Portfolio website with Authentication and other functions",
+    "description": "Music portfolio website with React + Firebase",
+    "tags": ["React", "Typescript", "Web App", "Firebase"],
+    "github": "https://github.com/lukkuz1/react-music-portfolio",
+    "link": "https://sventes-su-gediminu.netlify.app/",
+    "source": "music-portfolio",
+    "image": "/images/logo-main.jpg"
+  },
+
+  {
+    "name": "pc-part-picker",
+    "description": "A web application to help users create and manage custom PC builds. Users can browse through various components like CPUs, GPUs, and more, check compatibility, and save their builds. Built using React and Firebase.",
+    "tags": ["React", "Typescript", "Web App", "Firebase"],
+    "github": "https://github.com/lukkuz1/pc-part-picker",
+    "source": "pc-part-picker",
+    "image": "/images/React-icon.svg.png"
   }
+
 ]
