@@ -52,6 +52,16 @@
   },
 
   {
+    "name": "Battleship game",
+    "description": "Simple battleship game made with React.",
+    "tags": ["React", "Battleship", "Game"],
+    "github": "https://github.com/lukkuz1/battleship-task-react",
+    "link": "https://battleship-simple-game.netlify.app/",
+    "source": "battleship",
+    "image": "/images/React-icon.svg.png"
+  },
+
+  {
     "name": "pc-part-picker",
     "description": "A web application to help users create and manage custom PC builds. Users can browse through various components like CPUs, GPUs, and more, check compatibility, and save their builds. Built using React and Firebase.",
     "tags": ["React", "Typescript", "Web App", "Firebase"],
@@ -59,5 +69,7 @@
     "source": "pc-part-picker",
     "image": "/images/React-icon.svg.png"
   }
+
+
 
 ]
